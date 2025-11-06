@@ -28,7 +28,7 @@ public class CollectInfo
 		boolean boolstate = true;
 		
 		float isyes = gradenum % 1;
-		roundyes = Math.ceil(isyes * 10)/10;
+		roundyes = (float) (Math.ceil(isyes * 10)/10);
 		System.out.print(roundyes);
 		if(isyes > 0)
 		{
