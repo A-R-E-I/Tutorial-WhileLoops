@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class CollectInfo 
 {
 	static Scanner allinput = new Scanner(System.in);
+	Calculate calcinfo = new Calculate();
 	
 	public CollectInfo()
 	{
@@ -20,6 +21,10 @@ public class CollectInfo
 		numgrades = allinput.nextFloat();
 		yesorno = CheckNum(numgrades);
 		System.out.print(yesorno);
+		if(yesorno)
+		{
+			calcinfo.Calc((int)numgrades);
+		}
 	}
 	
 	public boolean CheckNum(float gradenum)
@@ -27,9 +32,10 @@ public class CollectInfo
 		float roundyes;
 		boolean boolstate = true;
 		
+		
 		float isyes = gradenum % 1;
 		roundyes = (float) (Math.ceil(isyes * 10)/10);
-		System.out.print(roundyes);
+		System.out.print(roundyes + "\n");
 		if(isyes > 0)
 		{
 			return false;
