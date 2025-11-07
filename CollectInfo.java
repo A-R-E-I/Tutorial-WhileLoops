@@ -2,7 +2,7 @@ package javaPack;
 
 import java.util.Scanner;
 
-public class CollectInfo 
+public class CollectInfo //Will collect the number of grades to be inputed and check if the input is between 1-100
 {
 	static Scanner allinput = new Scanner(System.in);
 	Calculate calcinfo = new Calculate();

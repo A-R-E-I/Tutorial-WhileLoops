@@ -1,6 +1,7 @@
 package javaPack;
 
-public class MainProgram {
+public class MainProgram //Calls CollectInfo
+{
 
 	public static void main(String[] args) 
 	{	

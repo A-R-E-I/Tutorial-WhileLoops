@@ -2,7 +2,7 @@ package javaPack;
 
 import java.util.Scanner;
 
-public class Calculate 
+public class Calculate //calculates the gpa for the grades
 {
 	static Scanner allinput = new Scanner(System.in);
 	float gradetotal;
